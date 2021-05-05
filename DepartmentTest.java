@@ -221,6 +221,7 @@ class DepartmentDAOImpl implements DepartmentDAO
 			System.out.println("Trying to fire it... ");	//4th step : fire the statement and acquire result if any
 			int rows = pst.executeUpdate();
 			System.out.println("Record updated : "+rows);
+			System.out.println("Records modified");
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
