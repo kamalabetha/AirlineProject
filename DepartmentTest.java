@@ -142,7 +142,8 @@ class DepartmentDAOImpl implements DepartmentDAO
 			pst.setString(3, dRef.getDepartmentLocation());
 			System.out.println("PrepareStatement made....for DML");
 			
-			System.out.println("Trying to fire it... ");	//4th step : fire the statement and acquire result if any
+			System.out.println("Trying to fire it... ");
+			System.out.println("started executing");
 			int rows = pst.executeUpdate(); 
 			System.out.println("Record inserted..."+rows);
 		} catch (SQLException e) {
@@ -236,6 +237,7 @@ class DepartmentDAOImpl implements DepartmentDAO
 			System.out.println("Trying to fire it... ");	
 			int rows = pst.executeUpdate(); 
 			System.out.println("Record deleted..."+rows);
+			System.out.println("record deleted successfully");
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
